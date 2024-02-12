@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ab785e35a9.js" crossorigin="anonymous"></script>
+    <style>
+        .testimonial-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background: #262626;
+        padding: 30px;
+        font-size: 13px;
+        font-weight: 300;
+        border-radius:10px;
+        transition: background 0.5s,transform 0.5s ;
+        }
+        
+        /* Styles for each testimonial */
+        .testimonial {
+            width: 33.33%; /* Show three testimonials side by side */
+            float: left;
+            transition: transform 0.5s ease;
+        }
+        
+        /* Styles for slider buttons */
+        .slider-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            z-index: 1;
+        }
+        
+        /* Styles for previous button */
+        .prev {
+            left: 0;
+        }
+        
+        /* Styles for next button */
+        .next {
+            right: 0;
+        }
+    </style>
+    </head>
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="website/logo2.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+        <div class-"header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm Jasmitha</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="website/image.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Jasmitha, a passionate and creative  With a background in Engineering, I love bringing ideas to life through HTML,CSS,JS Whether it's designing eye-catching graphics or crafting immersive user experiences, I thrive on the challenge of creating something impactful. When I'm not busy with my projects, you can find me exploring the great outdoors or indulging in my love for photography. Let's connect and collaborate on something amazing!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab"id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML,CSS,JavaScript</li>
+                        <li><span>Database Management</span><br>MySQL,Oracle,SQL</li>
+                        <li><span>Programming Languages</span><br>C,Python,Java</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="education">
+                    <ul>
+                        <li><span>2019</span><br>Board of Secondary Education,AP</li>
+                        <li><span>2021</span><br>Board of Intermediate education,AP</li>
+                        <li><span>2025</span><br>AITAM,tekkali(IT)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2> 
+                <p>I offer top-notch web design services that are tailored to your unique style and business needs. From eye-catching layouts to seamless user experiences, I'll create a website that not only looks amazing but also drives results. Let's collaborate and bring your online presence to life!"</p>
+                <a href="https://www.simplilearn.com/what-is-web-designing-article" class="btn1">Read More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database</h2> 
+                <p>Database management is a crucial aspect of many projects.A database is an organized collection of structured information, or data, typically stored electronically in a computer system.<br>Relational Databases: MySQL,Oracle<br>Database Query Languages: SQL</p>
+                <a href="https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/" class="btn1">Read More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-user"></i>
+                <h2>Programming Languages</h2> 
+                <p>C,Python,Java,C++<br>These are just a few of the programming languages I'm proficient in. I'm always excited to learn and work with new technologies, so if you have any specific requirements, feel free to reach out!"</p>
+                <a href="https://www.simplilearn.com/best-programming-languages-start-learning-today-article" class="btn1">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="website/portfolio1.jpg">
+                <div class="layer">
+                <h3>Web Development</h3>
+                <p>I had done my latest project which is related to web design that is Netflix clone</p>
+                <a href="https://github.com/Jami9100/Netflix_Clone.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="website/portfolio2.jpg">
+                <div class="layer">
+                    <h3>Salesforce</h3>
+                    <p>I had done my latest project which is to complete modules</p>
+                    <a href="https://smartinternz.com/internships/salesforce_certificates/59b177cf8deaa52e80acd48bfaf1b1bf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="website/portfolio3.jpg">
+                <div class="layer">
+                    <h3>Web Application</h3>
+                    <p>I had done my latest project which is related to web design that is Mass Mail dispatcher project.</p>
+                    <a href="https://github.com/Jami9100/Mass_Mail_Dispatcher.git"><i class="fa-solid fa-link"></i></a>
+                    </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class=""sub-title>Contact Me!</h1>
+                <p><i class="fa-regular fa-share-from-square"></i>jami123@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>1234567890</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="website/JASMITHA_RESUME87 (2).pdf" Download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="contact@example.com" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<section>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <h2>Testimonial 1</h2>
+            <p>Working with jashu is just great,every problem in my house is solved in a matter of days</p>
+        </div>
+        <div class="testimonial">
+            <h2>Testimonial 2</h2>
+            <p>I am great to see your website ,So happy</p>
+        </div>
+        <div class="testimonial">
+            <h2>Testimonial 3</h2>
+            <p>Thank for your valuable Information</p>
+        </div>
+    </div>
+</section>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwC_57k5O6IlBnpGCXy_7RET0SEmqhZ4R5opFwWU6uuizXfmGEUssq5TDUEVYDRgetq/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("testimonial");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.transform = `translateX(${(i - slideIndex) * 100}%)`;
+        }
+        slideIndex++;
+        if (slideIndex >= slides.length) { slideIndex = 0; }
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    function moveSlider(direction) {
+        slideIndex += direction;
+        showSlides();
+    }
+</script>
+</body>
+</html>
